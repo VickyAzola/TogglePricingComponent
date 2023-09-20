@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Pricing component with toggle</title>
+
+</head>
+<body>
+
+  <div class="flex flex-col min-h-screen items-center justify-center text-center">
+    <header class="pt-12 md:pt-10 space-y-10 md:space-y-8">
+      <h1 class="text-3xl font-bold text-[#6d708d]">Our Pricing</h1>
+      <div class="flex items-center gap-x-4 text-[#b3b5c6] font-semibold">
+        <p>Annually</p>
+        <label class="switch">
+          <input id="toggle_checkbox" onclick="changePrice()" type="checkbox">
+          <span class="slider round"></span>
+        </label>
+        <p>Monthly</p>
+      </div>
+    </header>
+
+    <main class="py-16 md:py-10 space-y-6 md:space-y-0 md:flex md:items-center">
+
+      <section class="w-72 bg-white p-6 rounded-lg shadow-xl shadow-[#cbcef7] font-semibold">
+        <h1 class="text-[#6d708d]">Basic</h1>
+        <h2 class="annual_price text-[#494c5f] text-6xl font-bold flex items-center justify-center py-7"><span class="text-4xl">&dollar;</span>199.99</h2>
+        <h2 class="month_price hidden text-[#494c5f] font-bold text-6xl flex items-center justify-center py-7"><span class="text-4xl">&dollar;</span>19.99</h2>
+        <p class="border-t py-3 text-xs text-[#494c5f]">500 GB Storage</p>
+        <p class="border-y border-[#b3b5c6] py-3 text-xs text-[#494c5f]">2 Users Allowed</p>
+        <p class="border-b border-[#b3b5c6] py-3 text-xs text-[#494c5f]">Send up to 3 GB</p>
+        <button class="border tracking-widest py-2.5 w-full text-white uppercase text-xs rounded-md mt-5 bg-gradient-to-r from-[#a3a8f0] to-[#696fdd] hover:bg-none hover:text-[#696fdd] hover:border-[#696fdd]">Learn More</button>
+      </section>
+
+      <section class="w-72 md:py-10 bg-gradient-to-br from-[#a3a8f0] to-[#696fdd] text-white p-6 rounded-lg shadow-xl shadow-[#cbcef7] font-semibold"> 
+        <h1>Professional</h1>
+        <h2 class="annual_price text-6xl font-bold flex items-center justify-center py-7"><span class="text-4xl">&dollar;</span>249.99</h2>
+        <h2 class="month_price hidden font-bold text-6xl flex items-center justify-center py-7"><span class="text-4xl">&dollar;</span>24.99</h2>
+        <p class="border-t border-white py-3 text-xs">1 TB Storage</p>
+        <p class="border-y border-white py-3 text-xs">5 Users Allowed</p>
+        <p class="border-b border-white py-3 text-xs">Send up to 10 GB</p>
+        <button class="border tracking-widest py-2.5 w-full text-[#696fdd] uppercase text-xs rounded-md mt-5 bg-white hover:bg-transparent hover:text-white hover:border-white">Learn More</button>
+      </section>
+
+      <section class="w-72 bg-white p-6 rounded-lg shadow-xl shadow-[#cbcef7] font-semibold">
+        <h1 class="text-[#6d708d]">Master</h1>
+        <h2 class="annual_price text-[#494c5f] text-6xl font-bold flex items-center justify-center py-7"><span class="text-4xl">&dollar;</span>399.99</h2>
+        <h2 class="month_price hidden text-[#494c5f] font-bold text-6xl flex items-center justify-center py-7"><span class="text-4xl">&dollar;</span>39.99</h2>
+        <p class="border-t py-3 text-xs text-[#494c5f]">2 TB Storage</p>
+        <p class="border-y border-[#b3b5c6] py-3 text-xs text-[#494c5f]">10 Users Allowed</p>
+        <p class="border-b border-[#b3b5c6] py-3 text-xs text-[#494c5f]">Send up to 20 GB</p>
+        <button class="border tracking-widest py-2.5 w-full text-white uppercase text-xs rounded-md mt-5 bg-gradient-to-r from-[#a3a8f0] to-[#696fdd] hover:bg-none hover:text-[#696fdd] hover:border-[#696fdd]">Learn More</button>
+      </section>
+
+    </main>
+  </div>
+
+  <footer class="text-center pb-4 text-[#b3b5c6]">
+    <p class="text-xs">
+      Challenge by 
+      <a class="font-bold hover:text-[#696fdd]" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by 
+      <a class="font-bold hover:text-[#696fdd]" href="https://github.com/VickyAzola/TogglePricingComponent" target="_blank">Victoria Azola</a>.
+    </p>
+  </footer>
+</body>
+<script src="index.js"></script>
+</html>
